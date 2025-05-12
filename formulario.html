@@ -1,29 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Solicitar Consultoria</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
 </head>
 <body>
+
     <header>
         <div class="logo">Consultoria Digital</div>
     </header>
 
     <main style="padding: 40px;">
-        <h1>Solicitar uma Consultoria</h1>
-        <form action="#" method="post">
-            <label for="nome">Nome:</label><br>
-            <input type="text" id="nome" name="nome" required><br><br>
+        <section class="hero">
+            <h1>Solicitar Consultoria</h1>
+            <form id="form-consultoria">
+                <label for="nome">Nome:</label><br>
+                <input type="text" id="nome" name="nome" required><br><br>
+            
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+            
+                <label for="mensagem">Mensagem:</label><br>
+                <textarea id="mensagem" name="mensagem" rows="5" required></textarea><br><br>
+            
+                <button type="submit" class="cta-button">Enviar Pedido</button>
+            </form>
+            
+            <div id="mensagem-confirmacao" style="display:none; margin-top: 20px; font-size: 18px; color: white;">
+                Obrigado pela sua mensagem. Em breve entraremos em contacto.
+            </div>
+            <script>
+                document.getElementById('form-consultoria').addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    this.style.display = 'none';
+                    document.getElementById('mensagem-confirmacao').style.display = 'block';
+                });
+            </script>
+            
+        </section>
 
-            <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email" required><br><br>
-
-            <label for="mensagem">Mensagem:</label><br>
-            <textarea id="mensagem" name="mensagem" rows="5" required></textarea><br><br>
-
-            <button type="submit" class="cta-button">Enviar Pedido</button>
-        </form>
+        <section class="back-link">
+            <a href="index.html" class="cta-button">Voltar ao Início</a>
+        </section>
     </main>
+
 </body>
 </html>
+
