@@ -210,4 +210,16 @@ form label {
     color: #333;
 }
 
+#marketing-digital p:first-of-type {
+    color: #223f6f; 
+    margin-bottom: 20px; 
+}
 
+#websites p:first-of-type {
+    color: #223f6f; 
+    margin-bottom: 20px; 
+}
+#gestao-medias p:first-of-type {
+    color: #223f6f; 
+    margin-bottom: 20px; 
+}
