@@ -129,10 +129,12 @@ header nav ul li a {
 }
 
 footer {
+    
     background-color: #1F2937;
     color: #F9FAF8;
     text-align: center;
     padding: 20px;
+    margin-bottom: 0;
 }
 
 form {
@@ -222,4 +224,8 @@ form label {
 #gestao-medias p:first-of-type {
     color: #223f6f; 
     margin-bottom: 20px; 
+}
+
+.content-block p {
+    margin-bottom: 29px;
 }
